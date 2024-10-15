@@ -43,9 +43,8 @@ button{
 .nav-link {
   border-radius: 20px;
   padding: 8px 15px;
-  box-shadow:  8px 8px 16px #d0d0d0,
-             -8px -8px 16px #f0f0f0;
-
+  box-shadow:  5px 5px 5px #cccccc,
+             -5px -5px 5px #f4f4f4;
 }
 
 .color-wrap {
@@ -54,7 +53,6 @@ button{
   flex-direction: column;
   gap: 30px;
   margin-top: 150px;
-  
 }
 
 .text-wrap {
@@ -70,9 +68,8 @@ button{
   border-radius: 20px;
   padding: 8px 15px;
   background: inherit;
-  box-shadow:  8px 8px 16px #d0d0d0,
-             -8px -8px 16px #f0f0f0;
-  
+  box-shadow:  5px 5px 5px #cccccc,
+             -5px -5px 5px #f4f4f4;
 }
 
 .border-elements {

@@ -11,17 +11,14 @@ btn.addEventListener("click", function() {
   document.body.style.backgroundColor = hsl;
   span.textContent = hsl;
 
-  let shadow = "";
-    if(lightness >= 80) {
-      shadow = lightness - 10;
-    } else {
-      shadow = lightness + 10;
-    }
-  const shadowHsl =  "hsl(" + hue + "," + saturation + "%," + shadow + "%)";
+  const lightShade = lightness + 5;
+  const darkShade = lightness - 5;
+  const lightShadow = "hsl(" + hue + "," + saturation + "%," + lightShade + "%)";
+  const darkShadow = "hsl(" + hue + "," + saturation + "%," + darkShade + "%)";
       
   const shadowElements = document.getElementsByClassName("shadow-elements");
   for(i = 0; i < shadowElements.length; i++){
-    shadowElements[i].style.boxShadow = "8px 8px 16px " + shadowHsl + ",-8px -8px 16px " + shadowHsl;
+    shadowElements[i].style.boxShadow = "5px 5px 5px " + darkShadow + ",-5px -5px 5px " + lightShadow;
   }
 
   const text = document.getElementsByClassName("colored-text");
